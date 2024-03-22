@@ -1,0 +1,44 @@
+*********************************************************************************
+March 2024
+
+Chiara Picarelli - chiara.picarelli@polimi.it
+Matteo Tommasini - matteo.tommasini@polimi.it
+
+Departent of Chemistry, Materials and Chemical Engineering "G. Natta"
+(Building 6)
+
+Politecnico di Milano
+Piazza Leonardo Da Vinci 32
+20133 Milano (Italy)
+
+*********************************************************************************
+
+Benzene - Ph - C6H6
+
+d = 0.869 g/cm3 [1]
+B = 0.962e-4 bar-1 [1]
+N = 750
+l = 4.8 nm
+
+Force field topology was parametrized with Q-Force [2] at PBEPBE/6-31+G(D) level of theory.
+MD simulations were performed with GROMACS 2022.4 [3].
+
+Simulation details:
+Energy minimization: conjugate gradient algorithm.
+Equilibration I: NVT ensemble, 500 ps, 1 fs, 300 K, V-rescale thermostat.
+Equilibration II: NPT ensemble, 500 ps, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
+MD production run: NPT ensemble, 5 ns, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
+
+Volume, temperature, pressure, and density were calculated with the gmx energy tool:
+V = 110.621 nm3          (Err. Est. 0.11)
+T = 299.963 K               (Err. Est. 0.018)
+P = 3.1057 bar              (Err. Est. 5.4)
+d = 0.87945 g/cm3        (Err. Est. 0.0009)
+
+
+
+
+
+[1] - Y. Marcus "The Properties of Solvents", Wiley 1998.
+[2] - Sami, S.; Menger, M. F. S. J.; Faraji, S.; Broer, R.; Havenith, R. W. A., Q-Force: Quantum Mechanically Augmented Molecular Force Fields. Journal of Chemical Theory and Computation 2021, 17 (8), 4946-4960.
+[3] - https://doi.org/10.5281/zenodo.7323393.

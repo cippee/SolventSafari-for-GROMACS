@@ -1,0 +1,50 @@
+; Force field topology was parametrized with Q-Force (https://doi.org/10.1021/acs.jctc.1c00195) at PBEPBE/6-31+G(D) level of theory.
+; Chiara Picarelli, Politecnico di Milano, Mar 2024
+
+
+[ atomtypes ]
+;   name  at_num     mass   charge  type        sigma      epsilon
+opls_140       1   0.0000   0.0000     A  2.50000e-01  1.25520e-01
+opls_262       7   0.0000   0.0000     A  3.20000e-01  7.11280e-01
+opls_135       6   0.0000   0.0000     A  3.50000e-01  2.76144e-01
+
+[ nonbond_params ]
+;  name1    name2   type          sigma         epsilon
+opls_140 opls_140      1    2.50000e-01     1.25520e-01
+opls_140 opls_262      1    2.82843e-01     2.98797e-01
+opls_135 opls_140      1    2.95804e-01     1.86176e-01
+opls_262 opls_262      1    3.20000e-01     7.11280e-01
+opls_135 opls_262      1    3.34664e-01     4.43188e-01
+opls_135 opls_135      1    3.50000e-01     2.76144e-01
+
+[ moleculetype ]
+;name nrexcl
+ACN      3
+
+[ atoms ]
+;  nr      type  resnr  resnm    atom  cgrp      charge       mass
+    1  opls_135      1  ACN      C1     1    -0.23941   12.01070
+    2  opls_135      1  ACN      C2     2     0.20513   12.01070
+    3  opls_140      1  ACN      H1     3     0.15136    1.00794
+    4  opls_140      1  ACN      H2     4     0.15136    1.00794
+    5  opls_140      1  ACN      H3     5     0.15136    1.00794
+    6  opls_262      1  ACN      N1     6    -0.41980   14.00670
+
+[ bonds ]
+;   ai     aj      f         r0     k_bond
+     1      2      1    0.14604     250637
+     1      3      1    0.11029     286933
+     1      4      1    0.11029     286933
+     1      5      1    0.11029     286933
+     2      6      1    0.11733    1092058
+
+[ angles ]
+;   ai     aj     ak      f     theta0    k_theta         r0     k_bond
+     1      2      6      1    180.000    275.003
+     2      1      3      5    110.373    298.682    0.21143    21095.3
+     2      1      4      5    110.373    298.682    0.21143    21095.3
+     2      1      5      5    110.373    298.682    0.21143    21095.3
+     3      1      4      5    108.555    240.844    0.17908    11532.0
+     3      1      5      5    108.555    240.844    0.17908    11532.0
+     4      1      5      5    108.555    240.844    0.17908    11532.0
+

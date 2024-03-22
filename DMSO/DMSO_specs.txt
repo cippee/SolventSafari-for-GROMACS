@@ -1,0 +1,44 @@
+*********************************************************************************
+March 2024
+
+Chiara Picarelli - chiara.picarelli@polimi.it
+Matteo Tommasini - matteo.tommasini@polimi.it
+
+Departent of Chemistry, Materials and Chemical Engineering "G. Natta"
+(Building 6)
+
+Politecnico di Milano
+Piazza Leonardo Da Vinci 32
+20133 Milano (Italy)
+
+*********************************************************************************
+
+Dimethyl sulfoxide - DMSO - (CH3)2SO
+
+d = 1.096 g/cm3 [1]
+B = 0.524e-4 bar-1 [1]
+N = 900
+l = 4.7 nm
+
+Force field topology was parametrized with Q-Force [2] at PBEPBE/6-31+G(D) level of theory.
+MD simulations were performed with GROMACS 2022.4 [3].
+
+Simulation details:
+Energy minimization: conjugate gradient algorithm.
+Equilibration I: NVT ensemble, 500 ps, 1 fs, 300 K, V-rescale thermostat.
+Equilibration II: NPT ensemble, 500 ps, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
+MD production run: NPT ensemble, 5 ns, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
+
+Volume, temperature, pressure, and density were calculated with the gmx energy tool:
+V = 109.103 nm3          (Err. Est. 0.024)
+T = 299.988 K               (Err. Est. 0.019)
+P = 0.67975 bar            (Err. Est. 2.8)
+d = 1070.29 g/cm3        (Err. Est. 0.00023)
+
+
+
+
+
+[1] - Y. Marcus "The Properties of Solvents", Wiley 1998.
+[2] - Sami, S.; Menger, M. F. S. J.; Faraji, S.; Broer, R.; Havenith, R. W. A., Q-Force: Quantum Mechanically Augmented Molecular Force Fields. Journal of Chemical Theory and Computation 2021, 17 (8), 4946-4960.
+[3] - https://doi.org/10.5281/zenodo.7323393.
