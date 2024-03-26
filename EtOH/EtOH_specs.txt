@@ -33,7 +33,7 @@ Volume, temperature, pressure, and density were calculated with the gmx energy t
 V = 99.8806 nm3          (Err. Est. 0.068)
 T = 299.966 K               (Err. Est. 0.023)
 P = 3.522 bar                (Err. Est. 1.5)
-d = 765.946 g/cm3        (Err. Est. 0.00052)
+d = 0.76594 g/cm3        (Err. Est. 0.00052)
 
 
 
