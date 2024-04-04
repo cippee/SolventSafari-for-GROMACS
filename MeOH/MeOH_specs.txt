@@ -30,9 +30,9 @@ Equilibration II: NPT ensemble, 500 ps, 1 fs, 300 K, 1 bar, V-rescale thermostat
 MD production run: NPT ensemble, 5 ns, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
 
 Volume, temperature, pressure, and density were calculated with the gmx energy tool:
-V = 106.75 nm3            (Err. Est. 0.029)
-T = 299.986 K               (Err. Est. 0.024)
-P = 2.20514 bar            (Err. Est. 3.4)
+V = 106.750 nm3          (Err. Est. 0.029)
+T = 299.986 K            (Err. Est. 0.024)
+P = 2.20514 bar          (Err. Est. 3.4)
 d = 0.74769 g/cm3        (Err. Est. 0.0002)
 
 
