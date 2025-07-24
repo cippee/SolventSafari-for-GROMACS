@@ -1,10 +1,9 @@
 *********************************************************************************
 March 2024
 
-Chiara Picarelli - chiara.picarelli@polimi.it
-Matteo Tommasini - matteo.tommasini@polimi.it
+C. Picarelli - chiara.picarelli@polimi.it
 
-Departent of Chemistry, Materials and Chemical Engineering "G. Natta"
+Department of Chemistry, Materials and Chemical Engineering Giulio Natta
 (Building 6)
 
 Politecnico di Milano
@@ -13,12 +12,12 @@ Piazza Leonardo Da Vinci 32
 
 *********************************************************************************
 
-Chloroform - CHCl3 - CHCl3
+Toluene - Tol - C6H5CH3
 
-d = 1.479 g/cm3 [1]
-B = 1.033e-4 bar-1 [1]
-N = 1800
-l = 6.2 nm
+d = 0.862 g/cm3 [1]
+B = 0.992e-4 bar-1 [1]
+N = 600
+l = 4.7 nm
 
 Force field topology was parametrized with Q-Force [2] at PBEPBE/6-31+G(D) level of theory.
 MD simulations were performed with GROMACS 2022.4 [3].
@@ -30,10 +29,10 @@ Equilibration II: NPT ensemble, 500 ps, 1 fs, 300 K, 1 bar, V-rescale thermostat
 MD production run: NPT ensemble, 5 ns, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
 
 Volume, temperature, pressure, and density were calculated with the gmx energy tool:
-V = 236.744 nm3          (Err. Est. 0.13)
-T = 300.018 K            (Err. Est. 0.013)
-P = -1.22674 bar         (Err. Est. 1.8)
-d = 1.50721 g/cm3        (Err. Est. 0.0008)
+V = 106.135 nm3          (Err. Est. 0.03)
+T = 300.014 K            (Err. Est. 0.021)
+P = 4.61269 bar          (Err. Est. 5.1)
+d = 0.86497 g/cm3        (Err. Est. 0.00024)
 
 
 

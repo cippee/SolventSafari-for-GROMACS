@@ -1,10 +1,9 @@
 *********************************************************************************
 March 2024
 
-Chiara Picarelli - chiara.picarelli@polimi.it
-Matteo Tommasini - matteo.tommasini@polimi.it
+C. Picarelli - chiara.picarelli@polimi.it
 
-Departent of Chemistry, Materials and Chemical Engineering "G. Natta"
+Department of Chemistry, Materials and Chemical Engineering Giulio Natta
 (Building 6)
 
 Politecnico di Milano
@@ -13,12 +12,12 @@ Piazza Leonardo Da Vinci 32
 
 *********************************************************************************
 
-Carbon Disulfide - CS2 - CS2
+Tetrachloroethylene - C2Cl4 - C2Cl4
 
-d = 1.253 g/cm3 [1]
-B = 0.950e-4 bar-1 [1]
-N = 3000
-l = 6.7 nm
+d = 1.615 g/cm3 [1]
+B = 0.791e-4 bar-1 [1]
+N = 1500
+l = 6.3 nm
 
 Force field topology was parametrized with Q-Force [2] at PBEPBE/6-31+G(D) level of theory.
 MD simulations were performed with GROMACS 2022.4 [3].
@@ -30,10 +29,10 @@ Equilibration II: NPT ensemble, 500 ps, 1 fs, 300 K, 1 bar, V-rescale thermostat
 MD production run: NPT ensemble, 5 ns, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
 
 Volume, temperature, pressure, and density were calculated with the gmx energy tool:
-V = 284.197 nm3          (Err. Est. 0.15)
-T = 299.961 K            (Err. Est. 0.025)
-P = -0.8667 bar          (Err. Est. 1.2)
-d = 1.33466 g/cm3        (Err. Est. 0.0007)
+V = 250.215 nm3          (Err. Est. 0.039)
+T = 299.955 K               (Err. Est. 0.016)
+P = 1.13122 bar            (Err. Est. 1.2)
+d = 1.65084 g/cm3        (Err. Est. 0.00026)
 
 
 

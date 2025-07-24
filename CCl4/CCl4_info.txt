@@ -1,10 +1,9 @@
 *********************************************************************************
 March 2024
 
-Chiara Picarelli - chiara.picarelli@polimi.it
-Matteo Tommasini - matteo.tommasini@polimi.it
+C. Picarelli - chiara.picarelli@polimi.it
 
-Departent of Chemistry, Materials and Chemical Engineering "G. Natta"
+Department of Chemistry, Materials and Chemical Engineering Giulio Natta
 (Building 6)
 
 Politecnico di Milano
