@@ -29,6 +29,7 @@ Each solvent folder contains:
 * **Tol** - Toluene - C6H6CH3
 
 <img width="921" height="329" alt="image" src="https://github.com/user-attachments/assets/bcab3bc8-7a4c-4674-8604-d9a11ff93efa" />
+
 **Fig 1** – *Left panel: table showing experimental and calculated values with relative error. Central panel: bar plot of percentage relative errors, ϵₚ × 100%. Right panel: scatter plot of experimental vs. theoretical values, with grey area indicating the error margin and dashed line representing the linear regression.*
 
 
