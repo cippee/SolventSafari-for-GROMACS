@@ -28,9 +28,7 @@ Each solvent folder contains:
 * **THF** - Tetrahydrofuran - C4H8O
 * **Tol** - Toluene - C6H6CH3
 
-
-<img width="3877" height="1434" alt="fig3_density" src="https://github.com/user-attachments/assets/fff564f0-73da-4aa7-898c-49f081a0b708" />
-
+<img width="3877" height="1434" alt="fig_density" src="https://github.com/user-attachments/files/24715933/fig.pdf" />
 **Fig 1** – *Left panel: table showing experimental and calculated values with relative error. Central panel: bar plot of percentage relative errors, ϵₚ × 100%. Right panel: scatter plot of experimental vs. theoretical values, with grey area indicating the error margin and dashed line representing the linear regression.*
 
 
