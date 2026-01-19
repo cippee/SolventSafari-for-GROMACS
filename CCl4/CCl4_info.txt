@@ -32,13 +32,13 @@ Thermodynamic observables, including volume, temperature, pressure, and density,
 
 Quantity                    Average   Err.Est.       RMSD  Tot-Drift
 -------------------------------------------------------------------------------
-Potential                   45810.1         32    327.032    165.083  (kJ/mol)
-Kinetic En.                 33681.2         23    294.371    87.7316  (kJ/mol)
-Total Energy                79491.2         53    433.067    252.814  (kJ/mol)
-Temperature                 300.101        0.2    2.62286   0.781694  (K)
-Pressure                    10.6729        5.3    597.604   -12.3497  (bar)
-Volume                       109.12       0.07   0.614351   0.374857  (nm^3)
-Density                     795.465       0.51    4.47556   -2.73526  (kg/m^3)
+Potential                  -32251.2         14    346.599   -18.2748  (kJ/mol)
+Kinetic En.                 33668.4         14    290.172    23.0348  (kJ/mol)
+Total Energy                1417.21         26    449.193    4.76008  (kJ/mol)
+Temperature                 299.987       0.12    2.58545   0.205241  (K)
+Pressure                    2.54662        3.6    236.457    2.75463  (bar)
+Volume                      287.022      0.051    1.02285  -0.278412  (nm^3)
+Density                     1601.89       0.28    5.71004    1.55713  (kg/m^3)
 
 
 
