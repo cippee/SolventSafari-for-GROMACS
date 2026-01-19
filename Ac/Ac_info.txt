@@ -28,11 +28,17 @@ Equilibration I: NVT ensemble, 500 ps, 1 fs, 300 K, V-rescale thermostat.
 Equilibration II: NPT ensemble, 500 ps, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
 MD production run: NPT ensemble, 5 ns, 1 fs, 300 K, 1 bar, V-rescale thermostat and C-rescale barostat.
 
-Volume, temperature, pressure, and density were calculated with the gmx energy tool:
-V = 106.679 nm3          (Err. Est. 0.0086)
-T = 300.002 K            (Err. Est. 0.017)
-P = 0.37951 bar          (Err. Est. 2)
-d = 0.81367 g/cm3        (Err. Est. 0.000066)
+Thermodynamic observables, including volume, temperature, pressure, and density, were computed from the production trajectory using the gmx energy tool.
+
+Quantity                    Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Potential                   45810.1         32    327.032    165.083  (kJ/mol)
+Kinetic En.                 33681.2         23    294.371    87.7316  (kJ/mol)
+Total Energy                79491.2         53    433.067    252.814  (kJ/mol)
+Temperature                 300.101        0.2    2.62286   0.781694  (K)
+Pressure                    10.6729        5.3    597.604   -12.3497  (bar)
+Volume                       109.12       0.07   0.614351   0.374857  (nm^3)
+Density                     795.465       0.51    4.47556   -2.73526  (kg/m^3)
 
 
 
