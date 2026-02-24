@@ -1,0 +1,50 @@
+; NPT production run
+
+; Run parameters
+integrator          = md-vv       ; velocity Verlet integrator
+nsteps              = 1000000     ; 0.0005 * 1000000 = 500 ps
+dt                  = 0.0005      ; 0.5 fs
+
+; Output control (synchronized, 1 ps interval)
+nstxout             = 500
+nstvout             = 500
+nstenergy           = 500
+nstlog              = 500
+
+continuation = yes
+
+; Neighbor searching and vdW
+cutoff-scheme       = Verlet
+ns_type             = grid
+nstlist             = 10
+verlet-buffer-tolerance = 0.005
+rlist               = 1.25
+
+vdwtype             = cut-off
+vdw-modifier        = force-switch
+rvdw-switch         = 0.95
+rvdw                = 1.25
+
+; Electrostatics
+coulombtype         = P3M-AD
+rcoulomb            = 1.25
+
+; Temperature coupling
+tcoupl              = V-rescale
+tc-grps             = System
+tau_t               = 0.5
+ref_t               = 300
+
+; Pressure coupling is on
+pcoupl                  = C-rescale             ; Pressure coupling on in NPT
+pcoupltype              = isotropic             ; uniform scaling of box vectors
+tau_p                   = 2.0                   ; time constant, in ps
+ref_p                   = 1.0                   ; reference pressure, in bar
+compressibility         = 0.950e-4              ; isothermal compressibility of CS2, bar^-1
+
+; Periodic boundary conditions
+pbc                 = xyz
+DispCorr            = no
+
+; Velocity generation
+gen_vel             = no

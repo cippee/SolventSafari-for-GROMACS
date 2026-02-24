@@ -1,0 +1,39 @@
+; energy minimization - steepest descent
+
+; Parameters describing what to do, when to stop and what to save
+integrator          = steep           ; Steepest descent algorithm
+emtol               = 100             ; kJ/mol/nm, large tolerance for pre-optimization 
+emstep              = 0.01            ; Maximum step size [nm]
+nsteps              = 5000            ; Maximum steps
+
+; Center of mass motion
+comm-mode           = none            ; No constraints on center of mass motion
+
+; Output control
+nstxout             = 50000           ; save coordinates first and last 
+nstvout             = 0               ; velocities not needed in minimization 
+nstenergy           = 50000           ; save energies first and last
+
+; Neighbor searching
+; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
+cutoff-scheme       = Verlet
+nstlist             = 1               ; Update neighbor list every step (forces change a lot during em)
+ns_type             = grid
+verlet-buffer-tolerance = 0.005       ; Small buffer for accuracy
+rlist               = 1.25            ; Neighbor list cut-off [nm]
+
+; Electrostatics
+coulombtype         = P3M-AD          ; Particle-Particle Particle-Mesh algorithm, accurate long-range electrostatics
+rcoulomb            = 1.25            ; Real-space cut-off [nm]
+epsilon-r           = 1               ; Relative permittivity
+
+; van der Waals
+vdwtype             = Cut-off
+vdw-modifier        = force-switch    ; Smoothly switches the forces to zero between rvdw-switch and rvdw
+rvdw-switch         = 0.95            ; Start switching forces
+rvdw                = 1.25            ; vdW cut-off [nm]
+
+; Periodic Boundary Conditions
+pbc                 = xyz             ; Periodic Boundary Conditions
+DispCorr            = no              ; Long-range dispersion correction
+

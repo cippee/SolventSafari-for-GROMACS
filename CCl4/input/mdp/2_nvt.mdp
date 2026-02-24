@@ -1,0 +1,46 @@
+; NVT equilibration
+
+; Run parameters
+integrator          = md-vv       ; velocity Verlet integrator
+nsteps              = 200000      ; 0.0005 * 200000 = 100 ps
+dt                  = 0.0005      ; 0.5 fs
+
+; Output control (synchronized, 1 ps interval)
+nstxout             = 500
+nstvout             = 500
+nstenergy           = 500
+nstlog              = 500
+
+; Neighbor searching and vdW
+cutoff-scheme       = Verlet
+ns_type             = grid
+nstlist             = 10
+verlet-buffer-tolerance = 0.005
+rlist               = 1.25
+
+vdwtype             = cut-off
+vdw-modifier        = force-switch
+rvdw-switch         = 0.95
+rvdw                = 1.25
+
+; Electrostatics
+coulombtype         = P3M-AD
+rcoulomb            = 1.25
+
+; Temperature coupling
+tcoupl              = V-rescale
+tc-grps             = System
+tau_t               = 0.5
+ref_t               = 300
+
+; Pressure coupling
+pcoupl              = no
+
+; Periodic boundary conditions
+pbc                 = xyz
+DispCorr            = no
+
+; Velocity generation
+gen_vel             = yes
+gen_temp            = 300
+gen_seed            = -1
