@@ -1,13 +1,15 @@
 # SolventSafari for GROMACS
 
-A collection of DFT-MM/MD parametrized boxes of non-water solvents for GROMACS.
+A collection of DFT-MM/MD parametrized boxes of solvents for GROMACS.
 
 ## Contents
 
 Each solvent folder contains:
 * The OPLS-AA-based force field topology, parametrized with [Q-Force](https://github.com/selimsami/qforce "Q-Force") at the PBEPBE/6-31+G(d) level of theory
-* The GROMACS-processed `.gro` file of the final simulation box (containing 9000 atoms)
-* A text file with simulation data extracted using `gmx energy` (volume, temperature, pressure, density), along with related plots
+* The GROMACS-processed `$SOLVENT_solventbox.gro` file of the final simulation box (containing 9000 atoms
+* The molecular dynamics parameter files `.mdp` used for energy minimizations, equilibrations, and the production run
+* A `workflow.sh` script that automates the full simulation pipeline and reproduces the reported solvent box
+* A text file containing thermodynamic data extracted using the `gmx energy` module (potential energy, kinetic energy, volume, temperature, pressure, and density), together with the corresponding plots
 
 ### List of solvents
 
@@ -27,11 +29,6 @@ Each solvent folder contains:
 * **Ph** - Benzene - C6H6
 * **THF** - Tetrahydrofuran - C4H8O
 * **Tol** - Toluene - C6H6CH3
-
-<img width="921" height="329" alt="image" src="https://github.com/user-attachments/assets/bcab3bc8-7a4c-4674-8604-d9a11ff93efa" />
-
-**Fig 1** – *Left panel: table showing experimental and calculated values with relative error. Central panel: bar plot of percentage relative errors, ϵₚ × 100%. Right panel: scatter plot of experimental vs. theoretical values, with grey area indicating the error margin and dashed line representing the linear regression.*
-
 
 ## Usage
 
