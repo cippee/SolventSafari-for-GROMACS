@@ -1,6 +1,21 @@
 # SolventSafari for GROMACS
 
-A collection of DFT-MM/MD parametrized boxes of solvents for GROMACS.
+A collection of DFT-MM/MD parametrized boxes of solvents for GROMACS. Further details are available in this [article](https://doi.org/10.1021/acs.jchemed.6c00154). If you use this material, please cite:
+
+*Chiara Picarelli, Giuseppina Raffaini, Matteo Tommasini; From GROMACS Molecular Dynamics Simulations to Electronic Absorption Spectra: A Tutorial for Small Molecules in Organic Solvents. J. Chem. Educ. 2026; https://doi.org/10.1021/acs.jchemed.6c00154*
+
+   ```
+   @article{Picarelli2026,
+       author = {Picarelli, Chiara and Raffaini, Giuseppina and Tommasini, Matteo},
+       title = {From GROMACS Molecular Dynamics Simulations to Electronic Absorption Spectra: A Tutorial for Small Molecules in Organic Solvents},
+       journal = {Journal of Chemical Education},
+       year = {2026},
+       month = {09},
+       issn = {0021-9584},
+       doi = {10.1021/acs.jchemed.6c00154},
+       url = {https://doi.org/10.1021/acs.jchemed.6c00154},
+       eprint = {https://pubs.acs.org/jceda8/article-pdf/doi/10.1021/acs.jchemed.6c00154/68102490/acs.jchemed.6c00154.pdf}}
+   ```
 
 ## Contents
 
@@ -18,13 +33,13 @@ Each solvent folder contains:
 * **C2Cl4** - Tetrachloroethylene - C2Cl4
 * **CCl4** - Tetrachloromethane - CCl4
 * **CHCl3** - Chloroform - ChCl3
-* **cHex** - Ciclohexane - C6H12
+* **cHex** - Cyclohexane - C6H12
 * **ClPh** - Chlorobenzene - C6H5Cl
 * **CS2** - Carbon Disulfide - CS2
 * **DCM** - Dichloromethane - CH2Cl2
 * **DMSO** - Dimethyl sulfoxide - (CH3)2SO
-* **EtOH** - Ethane - C2H5OH
-* **MeOH** - Methane - CH3OH
+* **EtOH** - Ethanol - C2H5OH
+* **MeOH** - Methanol - CH3OH
 * **nHex** - Hexane - C6H14
 * **Ph** - Benzene - C6H6
 * **THF** - Tetrahydrofuran - C4H8O
